@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NavHeader"
+    android:orientation="vertical"
+    android:background="@color/principal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagen_perfil_actual_usuario"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/txt_nombre_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:text="@string/nombre_usuario_header"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txt_correo_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:text="@string/correo_usuario_header"
+            android:textAlignment="center"/>
+</LinearLayout>

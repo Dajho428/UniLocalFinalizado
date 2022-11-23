@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.BarraBusquedaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/texto_busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/txt_busqueda"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:paddingStart="23dp"
+            android:paddingEnd="15dp"
+            android:drawableEnd="@drawable/ic_search"
+            android:background="@drawable/fondo_forms"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"/>
+    </LinearLayout>
+
+</FrameLayout>

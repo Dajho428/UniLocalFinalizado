@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="7dp"
+    card_view:cardCornerRadius="10dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="17dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="70" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/icono_lugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font_awesome_solid_900"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/principal" />
+
+                <TextView
+                    android:id="@+id/nombre_lugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/principal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/calificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/s_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:text="\uf005"/>
+
+                <TextView
+                    android:id="@+id/s_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:text="\uf005"/>
+
+                <TextView
+                    android:id="@+id/s_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:text="\uf005"/>
+
+                <TextView
+                    android:id="@+id/s_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:text="\uf005"/>
+
+                <TextView
+                    android:id="@+id/s_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:text="\uf005"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/direccion_lugar"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/estado_lugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="15dp" />
+
+                <TextView
+                    android:id="@+id/horario_lugar"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_lugar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_weight="30" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

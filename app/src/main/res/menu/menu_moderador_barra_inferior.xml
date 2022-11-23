@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_menu_desplegable"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="@string/menu"/>
+
+    <item
+        android:id="@+id/menu_lugares_nuevos"
+        android:icon="@drawable/ic_baseline_library_books_24"
+        android:title="@string/nuevos_lugares" />
+
+    <item
+        android:id="@+id/menu_historial"
+        android:icon="@drawable/ic_baseline_library_books_24"
+        android:title="@string/historial" />
+
+</menu>

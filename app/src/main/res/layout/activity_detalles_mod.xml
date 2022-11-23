@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetallesModActivity"
+    android:layout_marginTop="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/imgagen_perfil">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_mod"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foregroundGravity="center"
+            android:src="@mipmap/ic_launcher_round"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgagen_perfil"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="@string/txt_nombre"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layout_nombre">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre_moderador_layout"
+            style="@style/til_form"
+            android:layout_width="313dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/nombre_mod"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:background="@drawable/fondo_forms"
+                android:text="@string/txt_nombre"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txt_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_nombre">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nickname_layout"
+            style="@style/til_form"
+            android:layout_width="313dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:background="@drawable/fondo_forms"
+                android:text="@string/txt_nickname"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txt_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nickname"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/correo_layout"
+            style="@style/til_form"
+            android:layout_width="313dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/correo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fondo_forms"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/txt_correo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/txt_correo">
+
+        <Button
+            android:id="@+id/btn_eliminar_moderador"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:textStyle="bold"
+            android:text="@string/eliminar_moderador"
+            android:textColor="@color/black"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

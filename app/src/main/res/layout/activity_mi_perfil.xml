@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MiPerfilActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagen_seleccionada_perfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foregroundGravity="center"
+            android:src="@mipmap/ic_launcher_round"></de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_imagen"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre_usuario_layout"
+            style="@style/til_form"
+            android:layout_width="313dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/txt_nombre">
+
+            <EditText
+                android:id="@+id/nombre_usuario_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_forms"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_nombre"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/campo_nickname"
+            style="@style/til_form"
+            android:layout_width="313dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:hint="@string/txt_nickname">
+
+            <EditText
+                android:id="@+id/nickname_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_forms"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_btn_imag"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/layout_nickname"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_elegir_imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/seleccionar_imagenes"
+            android:textColor="@color/black"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/layout_btn_imag"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_guardar_cambios"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/light_blue_200"
+            android:text="@string/guardar_cambios"
+            android:textColor="@color/black"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

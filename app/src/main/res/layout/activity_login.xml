@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/secundario"
+    tools:context=".activities.LoginActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="fixed" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <ImageView
+        android:id="@+id/imagen_logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_my_location_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        style="@style/til_form">
+
+        <EditText
+            android:id="@+id/email_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/txt_correo"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        style="@style/til_form">
+
+        <EditText
+            android:id="@+id/password_usuario"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/txt_contrasena"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/recuperar_contrasena"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="end|center_horizontal"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textSize="15sp"
+        android:textColor="@color/light_blue_600"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/fondo_forms"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/txt_iniciar_sesion"/>
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/fondo_forms"
+        android:layout_marginBottom="20dp"
+        android:text="@string/txt_registrarse"/>
+
+
+</LinearLayout>
